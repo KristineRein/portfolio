@@ -1,0 +1,196 @@
+body {
+    width: 100%;
+    color: #333;
+    font-family: montserrat;
+    margin: 0 auto;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+.nav-container {
+    width: 100%;
+    max-width: 1440px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: flex-end;
+    background-color: #fff;
+    margin: 0;
+    padding: 0;
+}
+.nav-layout {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+
+li a {
+    display: block;
+    color: #333;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+a {
+    text-decoration: none;
+    color: #333;
+}
+.about-layout {
+    background-image: url(./images/bg-image.png);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: 20% 100%;
+}
+.profile-img {
+    margin: 50px;
+}
+.info {
+    width: 1000px;
+}
+.about-content {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+    margin-left: 10%;
+}
+.intro01 {
+    font-size: 32px;
+    margin: 0;
+}
+.intro02 {
+    font-size: 52px;
+    margin: 0;
+}
+.btn-resume {
+    padding-top: 20px;
+}
+.resume {
+    padding: 10px 80px;
+    border-radius: 10px;
+    background-color: #333;
+    color: #fff;
+}
+.title-project {
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+.title01 {
+    font-weight: 900;
+    text-align: center;
+    background-color: #fff;
+    width: 30%;
+}
+
+.project-info {
+    padding: 50px 0 50px 0;
+}
+.proj01 {
+    padding-right: 50px;
+}
+.des01 {
+    text-align: center;
+}
+.personal-project-info {
+    padding: 50px 0 50px 0;
+}
+.per-proj01 {
+    padding-right: 50px;
+}
+.p-des01 {
+    text-align: center;
+}
+.bg-line01 {
+    position: absolute;
+    margin-top: 40px;
+    width: 100%;
+    z-index: -1;
+}
+.bg-line02 {
+    position: absolute;
+    margin-top: 40px;
+    width: 100%;
+    z-index: -1;
+}
+.bg-line03 {
+    position: absolute;
+    margin-top: 40px;
+    width: 100%;
+    z-index: -1;
+}
+.bg-line04 {
+    position: absolute;
+    margin-top: 40px;
+    width: 100%;
+    z-index: -1;
+}
+.software-list {
+    display: flex;
+    justify-content: center;
+    padding: 50px 0 100px 0;
+}
+.soft-logo {
+    padding: 20px;
+}
+footer {
+    display: flex;
+    justify-content: center;
+    background-color: #333;
+    color: #fff;
+}
+.contact-des {
+    display: flex;
+    justify-content: center;
+}
+.contact-title {
+    font-weight: 900;
+    text-align: center;
+    color: #fff;
+}
+.contact-text {
+    text-align: center;
+}
+.contact-info {
+    padding: 10px 50px;
+    color: #fff;
+}
+.fa {
+    color: #fff;
+}
+/* PAGINATION */
+#pagination {
+    margin: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.page-link {
+    display: inline-block;
+    margin: 0 5px;
+    text-decoration: none;
+    color: #333;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    padding: 0; 
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    font-size: 14px;
+}
+.page-link:hover {
+    background-color: #333;
+    color: #F4F4F4;
+}
