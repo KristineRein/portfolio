@@ -1,10 +1,10 @@
 //for pagination
 document.addEventListener("DOMContentLoaded", function () {
-    const dataList = document.querySelector(".blog-list__container");
+    const dataList = document.querySelector(".project-info");
     const pagination = document.getElementById("pagination");
 
     const itemsPerPage = 1;
-    const dataItems = document.querySelectorAll(".blog-list__card");
+    const dataItems = document.querySelectorAll(".proj-cont");
     const data = Array.from(dataItems).map(item => item.outerHTML);
 
     let currentPage = 1;
@@ -16,9 +16,9 @@ document.addEventListener("DOMContentLoaded", function () {
         const pageData = data.slice(start, end);
 
         pageData.forEach(item => {
-            const li = document.createElement("li");
-            li.innerHTML = item;
-            dataList.appendChild(li);
+            const div = document.createElement("div");
+            div.innerHTML = item;
+            dataList.appendChild(div);
         });
     }
 
@@ -26,7 +26,7 @@ document.addEventListener("DOMContentLoaded", function () {
         const totalPages = Math.ceil(data.length / itemsPerPage);
 
         const prevButton = document.createElement("a");
-        prevButton.href = "#blog-list-sec01";
+        prevButton.href = "#proj-des";
         prevButton.textContent = "<";
         prevButton.classList.add("page-link");
         prevButton.addEventListener("click", function () {
@@ -39,7 +39,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
         for (let i = 1; i <= totalPages; i++) {
             const button = document.createElement("a");
-            button.href = "#blog-list-sec01";
+            button.href = "#proj-des";
             button.textContent = i;
             button.classList.add("page-link");
             button.addEventListener("click", function () {
@@ -50,7 +50,7 @@ document.addEventListener("DOMContentLoaded", function () {
         }
 
         const nextButton = document.createElement("a");
-        nextButton.href = "#blog-list-sec01";
+        nextButton.href = "#proj-des";
         nextButton.textContent = ">";
         nextButton.classList.add("page-link");
         nextButton.addEventListener("click", function () {
