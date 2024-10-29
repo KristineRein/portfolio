@@ -94,8 +94,18 @@ a {
 .project-info {
     padding: 50px 0 50px 0;
 }
+.proj-cont {
+    align-items: center;
+    text-align: center;
+}
 .proj01 {
     padding-right: 50px;
+    width: 40%;
+    height: 40%;
+}
+.proj02 {
+    width: 40%;
+    height: 40%;
 }
 .des01 {
     text-align: center;
