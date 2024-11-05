@@ -3,6 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="stylesheet.css">
     <link href="common.js" media="screen, projection" rel="stylesheet">
     <title>Portfolio</title>
@@ -49,8 +53,16 @@
                 <h1 class="title01">Projects</h1>
                 <div class="proj-des">
                     <div class="project-info">
-                        <div class="proj-cont">
-                            <img src="./images/1- Kuyabu Trading-01.png" class="proj01" alt="my project">
+                        <div class="proj-cont" >
+                            <img src="./images/1- Kuyabu Trading-01.png" class="image-thumbnail" onclick="openModal()">
+
+                            <div id="imageModal" class="modal" onclick="closeModal()">
+                                <div class="modal-content" onclick="event.stopPropagation()">
+                                  <button class="close-btn" onclick="closeModal()">&times;</button>
+                                  <img src="./images/1- Kuyabu Trading-01.png" alt="Enlarged Image">
+                                </div>
+                              </div>
+
                             <img src="./images/2- Kuyabu Trading-02.png" class="proj02" alt="my project">
                             <p class="des01">This Home Page Project Design is made for Construction Company in Japan </p>
                         </div>
@@ -93,23 +105,26 @@
             <img class="bg-line02" src="./images/bg line.png" alt="">
             <div class="personal-proj">
                 <h1 class="title01">Personal Projects</h1>
-                    <div class="proj-des">
+                    <div class="p-proj-des">
                         <div class="personal-project-info">
-                            <div class="project-info">
-                                <div class="proj-cont">
-                                    <img src="./images/1- Kuyabu Trading-01.png" class="proj01" alt="my project">
-                                    <img src="./images/2- Kuyabu Trading-02.png" class="proj02" alt="my project">
+                            <div class="p-project-info">
+                                <div class="p-proj-cont">
+                                    <img src="./images/1-business gear solutions.png" class="proj01" alt="my project">
+                                    <img src="./images/2-business gear solutions.png" class="proj02" alt="my project">
                                     <p class="des01">This Home Page Project Design is made for Construction Company in Japan </p>
                                 </div>
-                                <div class="proj-cont">
-                                    <img src="./images/6-beemoon-1.png" class="proj01" alt="my project">
-                                    <img src="./images/6-beemoon.png" class="proj02" alt="my project">
+                                <div class="p-proj-cont">
+                                    <img src="./images/3.png" class="proj01" alt="my project">
+                                    <p class="des01">This Home Page Project Design is made for Construction Company in Japan </p>
+                                </div>
+                                <div class="p-proj-cont">
+                                    <img src="./images/7.png" class="proj02" alt="my project">
                                     <p class="des01">This Home Page Project Design is made for Construction Company in Japan </p>
                                 </div>
                             </div>
                         </div>
                             <!------- Pagination ------->
-                            <div id="pagination"></div>
+                            <div id="pagination01"></div>
                             <!-- end -->
                     </div>
             </div>
@@ -132,12 +147,14 @@
 
         <footer>
             <div class="contact">
-                <h1 class="contact-title">Contact</h1>
-                <img class="bg-line04" src="./images/bg line-white.png.png" alt="">
+                <div class="contact-det">
+                    <h1 class="contact-title">Contact</h1>
+                    <img class="bg-line04" src="./images/bg line-white.png" alt="">
+                </div>
                 <p class="contact-text" >Find out more about me and get in touch!</p>
                     <div class="contact-des">
-                        <a href="#" class="contact-info"><i class="fa fa-envelope" aria-hidden="true" style="color: #fff;"></i>reinpalaroan7@gmail.com</a>
-                        <a href="#" class="contact-info"><i class="fa fa-mobile" aria-hidden="true"></i>+63 981 173 1529</a>
+                        <a href="mailto:reinpalaroan7@gmail.com" class="contact-info"><i class="fa-solid fa-envelope"></i></i>reinpalaroan7@gmail.com</a>
+                        <a href="tel:+639811731529" class="contact-info"><i class="fa-solid fa-phone"></i>+63 981 173 1529</a>
                     </div>
             </div>
         </footer>
@@ -146,5 +163,16 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.1.0/jquery-migrate.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js" type="text/javascript"></script>
         <script type="text/javascript" src="common.js"></script>
+        <script>
+            // Function to open the modal
+            function openModal() {
+              document.getElementById("imageModal").style.display = "flex";
+            }
+          
+            // Function to close the modal
+            function closeModal() {
+              document.getElementById("imageModal").style.display = "none";
+            }
+          </script>
 </body>
 </html>

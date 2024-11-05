@@ -1,7 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 body {
     width: 100%;
     color: #333;
-    font-family: montserrat;
+    font-family: "Montserrat", sans-serif;
     margin: 0 auto;
 }
 .header {
@@ -90,14 +91,72 @@ a {
     background-color: #fff;
     width: 30%;
 }
-
-.project-info {
+.project, .personal-proj, .software {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.project-info, .p-project-info {
     padding: 50px 0 50px 0;
 }
-.proj-cont {
+.proj-cont, .p-proj-cont {
     align-items: center;
     text-align: center;
 }
+/*  modal */
+/* Thumbnail image styling */
+.image-thumbnail {
+    width: 50%;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+  .image-thumbnail:hover {
+    transform: scale(1.05);
+  }
+
+/* Modal background styling */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent background */
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+  }
+
+  /* Modal content styling */
+  .modal-content {
+    max-width: 90%;
+    max-height: 90%;
+    position: relative;
+  }
+
+  /* Large image styling */
+  .modal-content img {
+    width: 80%;
+    height: auto;
+    border-radius: 8px;
+  }
+
+  /* Close button styling */
+  .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+    background: none;
+    border: none;
+    font-weight: bold;
+  }
+
+
 .proj01 {
     padding-right: 50px;
     width: 40%;
@@ -110,9 +169,9 @@ a {
 .des01 {
     text-align: center;
 }
-.personal-project-info {
-    padding: 50px 0 50px 0;
-}
+/* .personal-project-info {
+    padding: 50px 0;
+} */
 .per-proj01 {
     padding-right: 50px;
 }
@@ -141,7 +200,7 @@ a {
     position: absolute;
     margin-top: 40px;
     width: 100%;
-    z-index: -1;
+    z-index: 1;
 }
 .software-list {
     display: flex;
@@ -152,10 +211,15 @@ a {
     padding: 20px;
 }
 footer {
-    display: flex;
-    justify-content: center;
+    /* display: flex;
+    justify-content: center; */
     background-color: #333;
     color: #fff;
+}
+.contact-det {
+    display: flex;
+    justify-content: center;
+    width: 100%;
 }
 .contact-des {
     display: flex;
@@ -165,6 +229,10 @@ footer {
     font-weight: 900;
     text-align: center;
     color: #fff;
+    background-color: #333;
+    padding: 0 30px;
+    position: relative;
+    z-index: 2;
 }
 .contact-text {
     text-align: center;
@@ -173,11 +241,12 @@ footer {
     padding: 10px 50px;
     color: #fff;
 }
-.fa {
+i {
     color: #fff;
+    padding-right: 20px;
 }
 /* PAGINATION */
-#pagination {
+#pagination, #pagination01 {
     margin: 20px 0;
     display: flex;
     align-items: center;
