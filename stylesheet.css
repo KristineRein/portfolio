@@ -89,7 +89,8 @@ a {
     font-weight: 900;
     text-align: center;
     background-color: #fff;
-    width: 30%;
+    width: max-content;
+    padding: 0 30px;
 }
 .project, .personal-proj, .software {
     display: flex;
@@ -107,14 +108,18 @@ a {
 /*  modal */
 /* Thumbnail image styling */
 .image-thumbnail {
-    width: 50%;
+    width: 100%;
     cursor: pointer;
     transition: transform 0.3s ease;
   }
   .image-thumbnail:hover {
     transform: scale(1.05);
   }
-
+.phover {
+    width: 1000px;
+    height: 1000px;
+    overflow: hidden;
+}
 /* Modal background styling */
 .modal {
     display: none; /* Hidden by default */
@@ -129,11 +134,14 @@ a {
     z-index: 1;
   }
 
-  /* Modal content styling */
-  .modal-content {
-    max-width: 90%;
-    max-height: 90%;
+ /* Modal content styling */
+ .modal-content {
+    width: 90%;
+    height: 100%;
     position: relative;
+    overflow-y: auto; /* Allows scrolling */
+    overflow-x: hidden; /* Hides horizontal scrollbar */
+    border-radius: 8px;
   }
 
   /* Large image styling */
@@ -142,7 +150,13 @@ a {
     height: auto;
     border-radius: 8px;
   }
-
+  /* Zoomed image styling */
+  .modal-content img {
+    height: auto;
+    min-width: 100%;
+    min-height: 100%;
+    cursor: grab;
+  }
   /* Close button styling */
   .close-btn {
     position: absolute;
@@ -151,7 +165,7 @@ a {
     font-size: 24px;
     color: white;
     cursor: pointer;
-    background: none;
+    background-color: #333;
     border: none;
     font-weight: bold;
   }
