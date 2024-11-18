@@ -230,6 +230,9 @@ footer {
     background-color: #333;
     color: #fff;
 }
+.contact {
+    padding: 50px;
+}
 .contact-det {
     display: flex;
     justify-content: center;
