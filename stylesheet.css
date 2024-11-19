@@ -18,7 +18,7 @@ body {
     justify-content: flex-end;
     background-color: #fff;
     margin: 0;
-    padding: 0;
+    padding: 20px;
 }
 .nav-layout {
     display: flex;
@@ -270,7 +270,7 @@ i {
     justify-content: center;
     text-align: center;
 }
-.page-link {
+.page-link,.page-link01 {
     display: inline-block;
     margin: 0 5px;
     text-decoration: none;
@@ -286,7 +286,7 @@ i {
     transition: background-color 0.3s, color 0.3s;
     font-size: 14px;
 }
-.page-link:hover {
+.page-link:hover , .page-link.active, .page-link01:hover , .page-link01.current{
     background-color: #333;
     color: #F4F4F4;
 }
