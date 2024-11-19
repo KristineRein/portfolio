@@ -290,3 +290,95 @@ i {
     background-color: #333;
     color: #F4F4F4;
 }
+
+/* Responsive view */
+@media screen and (max-width: 1200px) {
+    .nav-container, .about-content {
+        width: 90%;
+        margin: 0 auto;
+    }
+    .project, .p-proj-cont {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 768px) { 
+    .nav-container {
+        width: 90%;
+    }
+    .p-proj-cont, .phover {
+        width: 90%;
+        margin: 0 auto;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .nav-container {
+        font-size: 12px;
+        margin: 0 auto;
+    }
+    .about-content {
+        display: flex;
+        flex-direction: column;
+    }
+    .about-layout {
+        background-size: 50% 45%;
+        background-repeat: no-repeat;
+        background-position: top left;
+    }
+    .profile-img {
+        width: 60%;
+    }
+    .info {
+        width: 90%;
+    }
+    .intro01 {
+        font-size: 24px;
+    }
+    .intro02 {
+        font-size: 32px;
+    }
+    .title01, .contact-title {
+        font-size: 24px;
+    }
+    .bg-line04 {
+        margin-top: 30px;
+    }
+    .contact-des {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        font-size: 14px;
+    }
+    .contact-text {
+        font-size: 14px;
+    }
+    .contact-info {
+        padding: 10px 30px;
+    }
+    .btn-resume {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+    }
+    .resume {
+        padding: 10px 50px;
+    }
+    .pagination, .pagination01 {
+        width: 90%;
+    }
+    .about-content {
+        margin: 0 auto;
+    }
+    .phover {
+        width: 90%;
+        height: 100%;
+    }
+    .software-list {
+        width: 90%;
+        margin: 0 auto;
+    }
+    .soft-logo {
+        width: 30px;
+    }
+}
