@@ -314,8 +314,13 @@ i {
 
 @media only screen and (max-width: 480px) {
     .nav-container {
+        width: 90%;
         font-size: 12px;
         margin: 0 auto;
+    }
+    .info {
+        width: 90%;
+        margin-top: 60px;
     }
     .about-content {
         display: flex;
