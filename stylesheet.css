@@ -359,7 +359,7 @@ i {
         font-size: 14px;
     }
     .contact-info {
-        padding: 10px 30px;
+        padding: 10px 25px;
     }
     .btn-resume {
         display: flex;
@@ -382,6 +382,7 @@ i {
     .software-list {
         width: 90%;
         margin: 0 auto;
+        flex-wrap: wrap;
     }
     .soft-logo {
         width: 50px;
