@@ -300,6 +300,16 @@ i {
     .project, .p-proj-cont {
         width: 90%;
     }
+    #pagination, #pagination01 {
+        width: 90%;
+        margin: 0 auto;/* Pagination responsive view */
+    }
+    .page-link, .page-link01 {
+        width: 30px;
+        height: 30px;
+        font-size: 12px;
+        line-height: 30px;
+    }
 }
 
 @media screen and (max-width: 768px) { 
