@@ -52,6 +52,8 @@ a {
 }
 .profile-img {
     margin: 50px;
+    max-width: 20%;
+    max-height: 50%;
 }
 .info {
     width: 1000px;
